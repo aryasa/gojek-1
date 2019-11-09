@@ -139,8 +139,8 @@ function claim1($token) {
 }
 function claim2($token) {
     sleep(5);
-    echo "BOBA 19 :";
-    $data2 = '{"promo_code":"GOFOODBOBA19"}';
+    echo "BOBA 07 :";
+    $data2 = '{"promo_code":"GOFOODBOBA07"}';
     $claim2 = request("/go-promotions/v1/promotions/enrollments", $token, $data2);
     if ($claim2['success'] == 1) {
         return $claim2['data']['message'];
@@ -150,7 +150,7 @@ function claim2($token) {
 }
 function claim3($token) {
     sleep(5);
-    echo "BOBA 07 :";
+    echo "BOBA 07 AKHIR :";
     $data3 = '{"promo_code":"GOFOODBOBA07"}';
     $claim3 = request("/go-promotions/v1/promotions/enrollments", $token, $data3);
     if ($claim3['success'] == 1) {
@@ -165,13 +165,13 @@ utama:
 GOJEK GACHA PULAK NJIRRR :V
 -----MENU-----: 
 1. Redeem By Login 
-2. Redeem By Register (Setpin khusus Indonesia, No US Enter saja)
-3. Auto Mass Redeem By TOKEN yang terdaftar 
-4. Daftar Akun + Daftar Token untuk Mass Redeem
-5. Menampilkan Informasi Nomor Hp + Token yang terdaftar
-6. Auto Redeem Massal By Login
-7. Menampilkan Data NOHP LOGIN + TOKEN
-8. Login untuk Dapat TOKEN agar bisa REEDEM MASSAL
+2. Pilih 2 aja kontol
+3. KEVIN 
+4. SANGAT
+5. GANTENG
+6. SEKALI
+7. YA
+8. HAHA
 
 Masukin Pilihan = ";
     $type = trim(fgets(STDIN));
@@ -299,12 +299,12 @@ Token Anda Telah Tersimpan di token.txt
 ");
                             echo "
 
-Proses claim dimulai...
+Ngeclaim kode sabar ya kontol
 
 ";
                             $claim = claim($verif);
                             if ($claim == false) {
-                                echo "[1] Error Bro
+                                echo "[1] ANJENG
 ";
                             } else {
                                 echo "[1] ";
@@ -313,7 +313,7 @@ Proses claim dimulai...
                             }
                             $claim3 = claim3($verif);
                             if ($claim3 == false) {
-                                echo "[2] Error Bro
+                                echo "[2] KONTOL ULANG LAGI ANJING
 ";
                             } else {
                                 echo "[2] ";
@@ -322,7 +322,7 @@ Proses claim dimulai...
                             }
                             $claim2 = claim2($verif);
                             if ($claim2 == false) {
-                                echo "[3] Error Bro
+                                echo "[3] KONTOL ULANG LAGI ANJING
 ";
                             } else {
                                 echo "[3] ";
