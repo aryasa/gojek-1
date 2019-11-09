@@ -162,16 +162,11 @@ function claim3($token) {
 utama:
     system('clear');
     echo "
-GOJEK GACHA PULAK NJIRRR :V
+GACHA KONTOL MEMANG ANJENG MISI BOBA07 BERHASIL
 -----MENU-----: 
-1. Redeem By Login 
-2. Pilih 2 aja kontol
-3. KEVIN 
-4. SANGAT
-5. GANTENG
-6. SEKALI
-7. YA
-8. HAHA
+1.BY KEVIN
+2. PILIH 2 KONTOL
+
 
 Masukin Pilihan = ";
     $type = trim(fgets(STDIN));
@@ -304,7 +299,7 @@ Ngeclaim kode sabar ya kontol
 ";
                             $claim = claim($verif);
                             if ($claim == false) {
-                                echo "[1] ANJENG
+                                echo "[1] 1 GA AKAN DAPAT KONTOL
 ";
                             } else {
                                 echo "[1] ";
